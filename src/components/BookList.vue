@@ -2,9 +2,8 @@
   <div>
     <h1>{{title}}</h1>
     <ul>
-      <li>The Glass Castle</li>
-      <li>Freakanomics</li>
-      <li>A Beautiful Day to Die</li>
+      <li v-for="book in books">{{book.title}}:{{book.author}}</li>
+
     </ul>
   </div>
 </template>
